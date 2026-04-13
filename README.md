@@ -63,7 +63,8 @@ Uses `sentence-transformers` and automatically augments the system prompt for fu
 git clone https://github.com/altburak/SCA-AGENT
 cd SCA-Agent
 
-Install dependencies:
+2. Install dependencies:
+```bash
 pip install -r requirements.txt
 
 Set up environment variables:
