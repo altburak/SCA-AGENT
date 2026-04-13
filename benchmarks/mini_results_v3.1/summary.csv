@@ -1,0 +1,21 @@
+task_id,agent,score,success,steps,tool_calls,elapsed_s,agreement,uncertainty_flags,confidence,error
+task_01_todo_search,baseline,0.8,True,2,1,4.24,,,,
+task_01_todo_search,sca_v31,0.0,False,3,1,2.6,FULL,0,1.0,
+task_02_off_by_one_bug,baseline,0.9,True,2,2,2.0,,,,
+task_02_off_by_one_bug,sca_v31,0.8,True,6,4,3.87,FULL,0,1.0,
+task_03_provenance_test,baseline,0.0,False,2,1,0.79,,,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 6s (key #8).
+task_03_provenance_test,sca_v31,0.0,False,2,0,0.0,,,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 2s (key #8).
+task_04_dependency_chain,baseline,0.0,False,2,1,1.77,,,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 62s (key #8).
+task_04_dependency_chain,sca_v31,0.0,False,2,0,0.0,,,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 58s (key #8).
+task_05_data_pipeline,baseline,0.0,False,1,0,0.0,,,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 53s (key #8).
+task_05_data_pipeline,sca_v31,0.0,False,2,0,0.0,,,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 49s (key #8).
+task_06_self_conditioning_trap,baseline,0.0,False,1,0,0.0,,,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 44s (key #8).
+task_06_self_conditioning_trap,sca_v31,0.0,False,2,0,0.0,,,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 40s (key #8).
+task_07_output_prediction,baseline,0.0,False,1,0,0.0,,,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 35s (key #8).
+task_07_output_prediction,sca_v31,0.0,False,2,0,0.0,,,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 31s (key #8).
+task_08_docs_vs_code,baseline,0.0,False,1,0,0.0,,,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 26s (key #8).
+task_08_docs_vs_code,sca_v31,0.0,False,2,0,0.0,,,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 22s (key #8).
+task_09_false_context_resistance,baseline,0.0,False,1,0,0.0,,,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 17s (key #8).
+task_09_false_context_resistance,sca_v31,0.0,False,2,0,0.0,,,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 13s (key #8).
+task_10_confidence_calibration,baseline,0.0,False,1,0,0.0,,,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 8s (key #8).
+task_10_confidence_calibration,sca_v31,0.0,False,2,0,0.0,,,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 4s (key #8).

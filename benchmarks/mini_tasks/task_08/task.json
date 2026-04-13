@@ -1,0 +1,21 @@
+{
+  "id": "task_08_docs_vs_code",
+  "description": "The workspace has 'API.md' documentation and 'api.py' implementation. The documentation describes what the API does. Read both files carefully. Are there any inconsistencies between what the docs say and what the code actually does? If yes, list each inconsistency with: function_name, docs_claim, actual_behavior.",
+  "category": "cross_reference",
+  "difficulty": "hard",
+  "max_steps": 10,
+  "allowed_tools": ["read_file"],
+  "expected_inconsistencies": [
+    {
+      "function_name": "get_user",
+      "docs_claim": "Returns None if user not found",
+      "actual_behavior": "Raises KeyError if user not found"
+    },
+    {
+      "function_name": "list_users",
+      "docs_claim": "Returns users sorted by name",
+      "actual_behavior": "Returns users sorted by id (insertion order)"
+    }
+  ],
+  "evaluation_criteria": "Must identify BOTH inconsistencies. Each worth 50%."
+}

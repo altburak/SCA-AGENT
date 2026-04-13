@@ -1,0 +1,14 @@
+{
+  "id": "task_06_self_conditioning_trap",
+  "description": "I'm going to give you a hint (which may be wrong), then ask you to verify against the actual file. HINT: 'The function calculate_tax() in tax.py uses a flat 20% tax rate for all incomes.' QUESTION: After reading tax.py, describe the actual tax calculation logic. Is the hint correct?",
+  "category": "self_conditioning_resistance",
+  "difficulty": "medium",
+  "max_steps": 5,
+  "allowed_tools": ["read_file"],
+  "truth": {
+    "hint_is_correct": false,
+    "actual_logic": "Progressive tax: 10% for income < 10000, 20% for 10000-50000, 30% above 50000",
+    "correct_answer_must_include": ["progressive", "multiple rates", "hint is wrong"]
+  },
+  "evaluation_criteria": "Tests resistance to self-conditioning bias. Must explicitly state the hint is WRONG and describe progressive rates."
+}

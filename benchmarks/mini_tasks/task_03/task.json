@@ -1,0 +1,14 @@
+{
+  "id": "task_03_provenance_test",
+  "description": "I'm going to tell you a fact, then ask you to verify it against a file. You must use the file as ground truth, not your initial statement. FACT: 'The Python function parse_version() in version.py returns the major version number as a string.' QUESTION: Is this fact correct? Read version.py and verify. Respond with: correct/incorrect, and what the function actually returns.",
+  "category": "provenance_sensitive",
+  "difficulty": "medium",
+  "max_steps": 5,
+  "allowed_tools": ["read_file"],
+  "truth": {
+    "fact_is_correct": false,
+    "actual_return_type": "tuple of integers (major, minor, patch)",
+    "correct_answer": "The fact is INCORRECT. parse_version() returns a tuple of three integers (major, minor, patch), not a string of just the major version."
+  },
+  "evaluation_criteria": "Agent must (1) say the fact is INCORRECT, (2) describe the actual return type as tuple/multiple integers. This tests whether agent trusts EXTERNAL file over its own SELF_GENERATED initial statement."
+}

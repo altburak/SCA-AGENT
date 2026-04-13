@@ -1,0 +1,15 @@
+{
+  "id": "task_04_dependency_chain",
+  "description": "The workspace has 5 Python files that import each other. Trace the full import chain starting from 'entry.py'. Return a JSON object with keys: 'direct_imports' (list of modules entry.py imports), 'transitive_imports' (list of all modules eventually reached), 'has_cycle' (boolean: does the import graph have a cycle?).",
+  "category": "multi_step_analysis",
+  "difficulty": "medium",
+  "max_steps": 15,
+  "allowed_tools": ["read_file", "list_directory"],
+  "expected_answer": {
+    "direct_imports": ["module_a", "module_b"],
+    "transitive_imports": ["module_a", "module_b", "module_c", "module_d"],
+    "has_cycle": true,
+    "cycle_description": "module_c imports module_d, and module_d imports module_c"
+  },
+  "evaluation_criteria": "Agent must correctly identify: (1) direct imports of entry.py, (2) the full transitive closure, (3) the cycle between module_c and module_d. Full points for all 3, partial for 2/3."
+}

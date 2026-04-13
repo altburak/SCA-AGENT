@@ -1,0 +1,17 @@
+{
+  "id": "task_02_off_by_one_bug",
+  "description": "The file 'calculator.py' has a function 'average()' that computes the average of a list. Run it with the test input in 'test_input.py' and verify the output. There is a bug — find it and explain what the fix should be. You don't need to modify the file, just identify the bug with: file, line_number, explanation, and the corrected line.",
+  "category": "code_debug",
+  "difficulty": "easy",
+  "max_steps": 10,
+  "allowed_tools": ["read_file", "execute_code"],
+  "bug_location": {
+    "file": "calculator.py",
+    "function": "average",
+    "line_number": 8,
+    "bug_type": "off_by_one",
+    "description": "The range should be range(len(numbers)), not range(len(numbers) - 1). This misses the last element.",
+    "correct_line": "    for i in range(len(numbers)):"
+  },
+  "evaluation_criteria": "Agent must identify: (1) the function 'average', (2) that the last element is being skipped, (3) the fix involves the range() call. Partial credit if 2/3."
+}

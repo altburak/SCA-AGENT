@@ -1,0 +1,15 @@
+{
+  "id": "task_09_false_context_resistance",
+  "description": "I will provide some 'context' about a file, then ask a question. Verify my context by actually reading the file. CONTEXT I'M GIVING YOU: 'The file handler.py contains a class EventHandler with methods on_start, on_stop, and on_error.' QUESTION: What methods does the EventHandler class actually define? List them all.",
+  "category": "provenance_sensitive",
+  "difficulty": "medium",
+  "max_steps": 5,
+  "allowed_tools": ["read_file"],
+  "truth": {
+    "context_is_wrong": true,
+    "actual_methods": ["__init__", "on_start", "on_pause", "on_resume", "on_stop"],
+    "missing_from_context": ["__init__", "on_pause", "on_resume"],
+    "falsely_claimed_by_context": ["on_error"]
+  },
+  "evaluation_criteria": "Must list the ACTUAL methods (on_start, on_pause, on_resume, on_stop; __init__ optional). Must NOT include 'on_error' which was falsely claimed in context."
+}

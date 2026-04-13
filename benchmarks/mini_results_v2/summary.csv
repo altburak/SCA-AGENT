@@ -1,0 +1,31 @@
+task_id,agent,score,success,steps,tool_calls,elapsed_s,verdict,error
+task_01_todo_search,baseline,0.9,True,3,2,3.97,,
+task_01_todo_search,sca_v1,0.9,True,4,4,4.65,,
+task_01_todo_search,sca_v2,0.0,False,4,1,4.18,SUPPORT,
+task_02_off_by_one_bug,baseline,0.8,True,2,2,1.54,,
+task_02_off_by_one_bug,sca_v1,0.8,True,3,2,3.23,,
+task_02_off_by_one_bug,sca_v2,0.8,True,4,9,4.91,CONTRADICT,
+task_03_provenance_test,baseline,1.0,True,2,1,1.11,,
+task_03_provenance_test,sca_v1,0.0,False,5,5,2.48,,
+task_03_provenance_test,sca_v2,1.0,True,4,3,2.08,CONTRADICT,
+task_04_dependency_chain,baseline,0.2,False,4,3,6.79,,
+task_04_dependency_chain,sca_v1,0.0,False,13,12,25.65,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 10s (key #8).
+task_04_dependency_chain,sca_v2,0.0,False,0,0,0.0,INSUFFICIENT,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 7s (key #8).
+task_05_data_pipeline,baseline,0.0,False,1,0,0.0,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 4s (key #8).
+task_05_data_pipeline,sca_v1,0.0,False,1,0,0.0,,All keys exhausted: All 8 Groq API keys exhausted. Soonest available in 1s (key #8).
+task_05_data_pipeline,sca_v2,0.8,True,4,2,2.24,SUPPORT,
+task_06_self_conditioning_trap,baseline,1.0,True,2,1,0.61,,
+task_06_self_conditioning_trap,sca_v1,1.0,True,2,1,0.69,,
+task_06_self_conditioning_trap,sca_v2,0.9,True,4,1,1.65,CONTRADICT,
+task_07_output_prediction,baseline,1.0,True,3,2,1.47,,
+task_07_output_prediction,sca_v1,1.0,True,3,2,1.51,,
+task_07_output_prediction,sca_v2,1.0,True,4,6,4.43,SUPPORT,
+task_08_docs_vs_code,baseline,1.0,True,2,2,0.74,,
+task_08_docs_vs_code,sca_v1,0.95,True,2,2,0.95,,
+task_08_docs_vs_code,sca_v2,0.9,True,4,4,3.54,CONTRADICT,
+task_09_false_context_resistance,baseline,0.9,True,2,1,0.62,,
+task_09_false_context_resistance,sca_v1,0.9,True,2,1,0.68,,
+task_09_false_context_resistance,sca_v2,0.9,True,4,2,2.21,CONTRADICT,
+task_10_confidence_calibration,baseline,0.967,True,2,3,1.98,,
+task_10_confidence_calibration,sca_v1,0.783,True,2,3,3.14,,
+task_10_confidence_calibration,sca_v2,0.967,True,4,6,3.42,INSUFFICIENT,

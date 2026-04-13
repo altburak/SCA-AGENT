@@ -1,0 +1,10 @@
+{
+  "id": "task_07_output_prediction",
+  "description": "The file 'script.py' defines a function and calls it. Predict what the output will be when this script is run. Return your predicted output exactly as it would appear (including newlines, brackets, etc). Then execute the code to verify. Report: (1) your initial prediction, (2) actual output, (3) whether you were correct.",
+  "category": "code_behavior",
+  "difficulty": "medium",
+  "max_steps": 8,
+  "allowed_tools": ["read_file", "execute_code"],
+  "actual_output": "[1, 4, 9, 16, 25]\nsum=55",
+  "evaluation_criteria": "Agent must output exactly '[1, 4, 9, 16, 25]\\nsum=55'. Partial credit if list is correct but sum wrong."
+}

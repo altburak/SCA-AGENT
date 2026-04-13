@@ -1,0 +1,15 @@
+{
+  "id": "task_01_todo_search",
+  "description": "In the workspace directory, find all Python functions that contain a 'TODO' comment in their body. Return a JSON list where each item has keys: file, function_name, line_number (of the TODO).",
+  "category": "file_exploration",
+  "difficulty": "easy",
+  "max_steps": 10,
+  "allowed_tools": ["read_file", "list_directory"],
+  "expected_findings": [
+    {"file": "main.py", "function_name": "process_data", "todo_present": true},
+    {"file": "utils.py", "function_name": "old_helper", "todo_present": true},
+    {"file": "utils.py", "function_name": "parse_config", "todo_present": true}
+  ],
+  "must_not_find": ["main.py::start", "main.py::finalize", "utils.py::clean_string"],
+  "evaluation_criteria": "Agent must find exactly 3 TODOs in 3 functions. Missing any = failure. Reporting false positives = partial failure."
+}

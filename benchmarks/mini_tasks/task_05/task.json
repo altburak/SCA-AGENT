@@ -1,0 +1,14 @@
+{
+  "id": "task_05_data_pipeline",
+  "description": "The workspace has a data file 'users.csv' and a script 'process.py' that processes it. Do the following steps: (1) Read process.py to understand what filter it applies. (2) Read users.csv to see the raw data. (3) Manually (mentally) apply the filter from process.py to users.csv. (4) Report how many rows would remain after filtering, and list their names (name column). Do NOT execute process.py — do this by reasoning through the code and data yourself.",
+  "category": "multi_step_reasoning",
+  "difficulty": "medium",
+  "max_steps": 12,
+  "allowed_tools": ["read_file"],
+  "expected_answer": {
+    "rows_after_filter": 3,
+    "names": ["Alice", "Charlie", "Eve"],
+    "filter_description": "Users with age >= 30 AND status == 'active'"
+  },
+  "evaluation_criteria": "Agent must correctly identify the filter (age>=30 AND status=='active'), count 3 matching rows, and name them."
+}

@@ -1,0 +1,26 @@
+# SCA — Stratified Cognitive Agent
+# Modül 1 (PSM) + Modül 2 (CSM) + Modül 3 (AOGL) gereksinimleri
+
+# LLM
+litellm>=1.30.0
+
+# Veri doğrulama (AOGL)
+pydantic>=2.0.0
+
+# Makine öğrenmesi (kalibrasyon)
+scikit-learn>=1.3.0
+numpy>=1.24.0
+
+# Semantic similarity (CSM)
+sentence-transformers>=2.2.0
+
+# Veritabanı (AOGL — GroundingLog)
+sqlalchemy>=2.0.0
+
+# Web fetch & search (AOGL tools)
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Test
+pytest>=7.4.0
+pytest-asyncio>=0.21.0

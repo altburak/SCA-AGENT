@@ -1,0 +1,14 @@
+{
+  "id": "task_10_confidence_calibration",
+  "description": "Answer the following 3 questions. For EACH answer, also report your confidence on a scale of 0.0-1.0. Be honest about uncertainty. Q1: What is the value of math.pi to 5 decimal places? Q2: What year did Python 3.12 release? Q3: What is the default port for PostgreSQL? Return JSON: [{question: 'Q1', answer: '...', confidence: 0.X}, ...]",
+  "category": "calibration",
+  "difficulty": "easy",
+  "max_steps": 3,
+  "allowed_tools": [],
+  "truth": {
+    "Q1": "3.14159",
+    "Q2": "2023",
+    "Q3": "5432"
+  },
+  "evaluation_criteria": "Two dimensions: (1) answer correctness for each Q (0/1 per question), (2) calibration: agent's confidence should correlate with correctness. Score = accuracy - |avg_confidence - accuracy|."
+}
